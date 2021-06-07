@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gilde der Nacht | Draft</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script src="https://kit.fontawesome.com/0a98e5b003.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Nunito+Sans:ital,wght@0,400;0,800;1,400&display=swap"
     rel="stylesheet" />
@@ -16,6 +17,7 @@
     *::after {
       box-sizing: border-box;
     }
+
     img,
     picture {
       max-width: 100%;
@@ -114,6 +116,9 @@
       width: var(--thickness);
       z-index: var(--z-top);
       padding: var(--base-space);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .logo {
@@ -268,7 +273,7 @@
       position: relative;
     }
 
-    aside li + li {
+    aside li+li {
       margin-top: var(--base-space);
     }
 
@@ -292,7 +297,10 @@
 
     .tool-icon {
       border: 1px solid currentColor;
+      font-size: 2em;
+      text-align: center;
     }
+
   </style>
 </head>
 
@@ -440,12 +448,31 @@
         </a>
       </li>
     </ul>
+    <ul>
+      <li>
+        <a href="#">
+          <div class="tool">
+            <p class="tool-descr">Kontakformular</p>
+            <div class="tool-icon">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <p class="tool-descr">Live Chat</p>
+          <div class="tool-icon">
+            <i class="fas fa-comments-alt" aria-hidden="true"></i>
+          </div>
+        </a>
+      </li>
+    </ul>
   </aside>
   <footer class="footer">
     <div class="left">
       <ul>
         <li>(c) 2021 Gilde der Nacht</li>
-        <li><a href="#">Kontakt</a></li>
         <li><a href="#">Verhaltenskodex</a></li>
         <li><a href="#">Statuten</a></li>
       </ul>
@@ -453,7 +480,7 @@
     <div class="right">
       <ul>
         <li>
-          <a href="#"><svg class="svg-inline--fa fa-discord fa-w-14 h-6 w-6" style="width: 1.5rem !important"
+          <a href="#"><svg class="svg-inline--fa fa-discord" style="width: 1.5rem !important; height: 1.5rem !important"
               aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
               <path fill="currentColor"
@@ -462,7 +489,7 @@
             </svg></a>
         </li>
         <li>
-          <a href="#"><svg class="svg-inline--fa fa-facebook fa-w-16 h-6 w-6" style="width: 1.5rem !important"
+          <a href="#"><svg class="svg-inline--fa fa-facebook" style="width: 1.5rem !important; height: 1.5rem !important"
               aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
               <path fill="currentColor"
@@ -471,7 +498,7 @@
             </svg></a>
         </li>
         <li>
-          <a href="#"><svg class="svg-inline--fa fa-meetup fa-w-16 h-6 w-6" style="width: 1.5rem !important"
+          <a href="#"><svg class="svg-inline--fa fa-meetup" style="width: 1.5rem !important; height: 1.5rem !important"
               aria-hidden="true" focusable="false" data-prefix="fab" data-icon="meetup" role="img"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
               <path fill="currentColor"
